@@ -11,13 +11,13 @@ I made this to gain more experience with React and Postgres. I'm particularly pr
 
 For live deployment I used:
 
- - Neon for severless Postgres Hosting
+ - [Neon](https://neon.com/) for severless Postgres Hosting 
 
- - Railway for the backend 
+ - [Railway](https://railway.com/) for the backend 
 
- - Vercel for the frontend
+ - [Vercel](https://vercel.com) for the frontend
 
- - Cloudinary for image hosting
+ - [Cloudinary](https://cloudinary.com/) for image hosting
 
 ## Login Preview:
 
