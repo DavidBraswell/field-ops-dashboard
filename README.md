@@ -6,7 +6,7 @@ Please take a look at the link here: https://field-ops-dashboard-two.vercel.app/
 
 Current features: Login/Logout to manage users, equipment tracking, jobsite assignment, image uploading, and status logging.
 
-I made this to gain more experience with React and Postgres. I'm particularly proud of the image upload and display.
+I made this to gain more project experience with React, Postgres, and Express. I'm particularly proud of the image upload feature and how the images are displayed on the page.
 
 
 For live deployment I used:
