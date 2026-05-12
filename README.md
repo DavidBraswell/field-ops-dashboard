@@ -18,3 +18,16 @@ For live deployment I used:
  - Vercel for the frontend
 
  - Cloudinary for image hosting
+
+## Login Preview:
+
+![login preview](https://github.com/DavidBraswell/field-ops-dashboard/blob/main/previewImages/landing.png)
+
+
+## Image Section Preview:
+
+![image preview](https://github.com/DavidBraswell/field-ops-dashboard/blob/main/previewImages/images.png)
+
+## Equipment Section Preview:
+
+![equipment preview](https://github.com/DavidBraswell/field-ops-dashboard/blob/main/previewImages/equipment.png)
