@@ -1,8 +1,8 @@
-Please take a look at the link here: https://vercel.com/davidbraswells-projects/field-ops-dashboard/Ri6pWewo4mhZbRif5oTHwfJeLEPa
-You can input fake information and fake emails, just enjoy the app :)
-
-
 A full stack PERN (Postgres, Express, React, Node.js) dashboard for field operations teams. 
+
+Please take a look at the link here: https://field-ops-dashboard-two.vercel.app/
+
+*I've added an invite code to the signup process to prevent bad actors from accessing my app, but please reach out if you'd like the code to take a look!*
 
 Current features: Login/Logout to manage users, equipment tracking, jobsite assignment, image uploading, and status logging.
 
