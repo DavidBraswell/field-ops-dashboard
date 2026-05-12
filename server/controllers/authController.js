@@ -6,7 +6,7 @@ const cookieOptions = {
   httpOnly: true,
   secure: true,
   sameSite: "none",
-  maxAge: 7 * 24 * 60 * 60 * 1000,
+  maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
 };
 
 const generateToken = (user) =>
@@ -27,6 +27,7 @@ const register = async (req, res) => {
   if (!name || !email || !password) {
     return res.status(400).json({ message: "All fields are required" });
   }
+
   try {
     const exists = await pool.query("SELECT id FROM users WHERE email = $1", [email]);
     if (exists.rows.length > 0) {
@@ -79,7 +80,7 @@ const login = async (req, res) => {
 
 // POST /api/auth/logout
 const logout = (req, res) => {
-  res.clearCookie("token");
+  res.clearCookie("token", { httpOnly: true, secure: true, sameSite: "none" });
   res.json({ message: "Logged out" });
 };
 

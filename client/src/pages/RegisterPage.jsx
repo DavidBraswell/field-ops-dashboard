@@ -9,7 +9,6 @@ const RegisterPage = () => {
   const [form, setForm] = useState({ name: "", email: "", password: "", invite_code: "" });
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  
 
   const handleChange = (e) => setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
 
@@ -89,8 +88,8 @@ const RegisterPage = () => {
             </div>
             <div>
               <label>Invite code</label>
-              <input type="text" name="invite_code" value={form.invite_code} onChange={handleChange} required placeholder="Enter invite code"/>
-</div>
+              <input type="text" name="invite_code" value={form.invite_code} onChange={handleChange} required placeholder="Enter invite code" />
+            </div>
 
             <div style={{ marginTop: 4 }}>
               <Btn type="submit" disabled={loading}>
