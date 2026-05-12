@@ -6,9 +6,10 @@ import { Btn, ErrorAlert } from "../components/common/UI";
 const RegisterPage = () => {
   const { register } = useAuth();
   const navigate = useNavigate();
-  const [form, setForm] = useState({ name: "", email: "", password: "" });
+  const [form, setForm] = useState({ name: "", email: "", password: "", invite_code: "" });
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  
 
   const handleChange = (e) => setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
 
@@ -86,6 +87,10 @@ const RegisterPage = () => {
               <label>Password</label>
               <input type="password" name="password" value={form.password} onChange={handleChange} required minLength={8} placeholder="Min. 8 characters" />
             </div>
+            <div>
+              <label>Invite code</label>
+              <input type="text" name="invite_code" value={form.invite_code} onChange={handleChange} required placeholder="Enter invite code"/>
+</div>
 
             <div style={{ marginTop: 4 }}>
               <Btn type="submit" disabled={loading}>
