@@ -16,3 +16,5 @@ For live deployment I used:
  - Railway for the backend 
 
  - Vercel for the frontend
+
+ - Cloudinary for image hosting
